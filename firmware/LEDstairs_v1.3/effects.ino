@@ -42,7 +42,7 @@ void stepFader(bool dir, bool state) {
             case 0: 
                 brightness = 0;
                 while (1) {
-                    EVERY_MS(50) {
+                    EVERY_MS(FADR_SPEED/4) {
                     brightness = min(brightness + 25, 255); // Увеличиваем яркость
                     if (brightness >= 255) break;
                     //Serial.print("Bright ");
@@ -55,7 +55,7 @@ void stepFader(bool dir, bool state) {
             case 1: 
                 brightness = 255;
                 while (1) {
-                    EVERY_MS(50) {
+                    EVERY_MS(FADR_SPEED/4) {
                     brightness = max(brightness - 25, 0); // Уменьшаем яркость
                     if (brightness <= 0) break;
                     //Serial.print("Bright ");
@@ -68,7 +68,7 @@ void stepFader(bool dir, bool state) {
             case 2: 
                 brightness = 0;
                 while (1) {
-                    EVERY_MS(50) {
+                    EVERY_MS(FADR_SPEED/4) {
                     brightness = min(brightness + 25, 255); // Увеличиваем яркость
                     if (brightness >= 255) break;
                     //Serial.print("Bright ");
@@ -81,7 +81,7 @@ void stepFader(bool dir, bool state) {
             case 3: 
               brightness = 255;
                 while (1) {
-                    EVERY_MS(50) {
+                    EVERY_MS(FADR_SPEED/4) {
                     brightness = max(brightness - 25, 0); // Уменьшаем яркость
                     if (brightness <= 0) break;
                     //Serial.print("Bright ");
@@ -108,7 +108,7 @@ void stepFader(bool dir, bool state) {
             case 0: 
               brightness = 0;
                 while (1) {
-                  EVERY_MS(50) {
+                  EVERY_MS(FADR_SPEED/4) {
                     brightness = min(brightness + 25, 255); // Увеличиваем яркость
                     if (brightness >= 255) break;
                     //Serial.print("Bright ");
@@ -122,7 +122,7 @@ void stepFader(bool dir, bool state) {
             case 1: 
               brightness = 255;
               while (1) {
-                  EVERY_MS(50) {
+                  EVERY_MS(FADR_SPEED/4) {
                     brightness = max(brightness - 25, 0); // Уменьшаем яркость
                     if (brightness <= 0) break;
                     //Serial.print("Bright ");
@@ -136,7 +136,7 @@ void stepFader(bool dir, bool state) {
             case 2: 
               brightness = 0;
                 while (1) {
-                   EVERY_MS(50) {
+                   EVERY_MS(FADR_SPEED/4) {
                     brightness = min(brightness + 25, 255); // Увеличиваем яркость
                     if (brightness >= 255) break;
                     //Serial.print("Bright ");
@@ -150,7 +150,7 @@ void stepFader(bool dir, bool state) {
             case 3: 
               brightness = 255;
                 while (1) {
-                  EVERY_MS(50) {
+                  EVERY_MS(FADR_SPEED/4) {
                     brightness = max(brightness - 25, 0); // Уменьшаем яркость
                     if (brightness <= 0) break;
                     //Serial.print("Bright ");
@@ -200,7 +200,7 @@ void stepFader(bool dir, bool state) {
             case 0: 
               brightness = 0;
                 while (1) {
-                  EVERY_MS(50) {
+                  EVERY_MS(FADR_SPEED/4) {
                     brightness = min(brightness + 25, 255); // Увеличиваем яркость
                     if (brightness >= 255) break;
                     //Serial.print("Bright ");
@@ -214,7 +214,7 @@ void stepFader(bool dir, bool state) {
             case 1: 
               brightness = 255;
               while (1) {
-                  EVERY_MS(50) {
+                  EVERY_MS(FADR_SPEED/4) {
                     brightness = max(brightness - 25, 0); // Уменьшаем яркость
                     if (brightness <= 0) break;
                     //Serial.print("Bright ");
@@ -228,7 +228,7 @@ void stepFader(bool dir, bool state) {
             case 2: 
               brightness = 0;
                 while (1) {
-                   EVERY_MS(50) {
+                   EVERY_MS(FADR_SPEED/4) {
                     brightness = min(brightness + 25, 255); // Увеличиваем яркость
                     if (brightness >= 255) break;
                     //Serial.print("Bright ");
@@ -242,7 +242,7 @@ void stepFader(bool dir, bool state) {
             case 3: 
               brightness = 255;
                 while (1) {
-                  EVERY_MS(50) {
+                  EVERY_MS(FADR_SPEED/4) {
                     brightness = max(brightness - 25, 0); // Уменьшаем яркость
                     if (brightness <= 0) break;
                     //Serial.print("Bright ");
